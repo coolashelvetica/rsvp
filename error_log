@@ -1,0 +1,2 @@
+[15-Feb-2013 12:16:54] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/faraashi/public_html/cyt/db.php on line 3
+[15-Feb-2013 12:20:15] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'araashi_admin'@'localhost' (using password: YES) in /home/faraashi/public_html/cyt/db.php on line 3

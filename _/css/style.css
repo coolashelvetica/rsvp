@@ -1,0 +1,703 @@
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://ericmeyer.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	
+}									
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html 
+{
+/*	overflow: hidden;
+*/	background-image: url('_/img/bg.jpg'); 
+	background-size:200px;
+}
+
+}
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+ 
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+.clear-right{clear: right;}
+.clear-left{clear: left;}
+.clear-both{clear: both;}
+
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+.hideaway
+{
+	display: none;
+}
+
+.left-area {
+width: 54%;
+background-color: red;
+height: 595px;
+float: left;
+border-bottom: 10px solid white;
+
+border-right: 4px solid white;
+}
+
+.left-area img
+{
+	height: 595px;
+}
+.right-area {
+width: 60%;
+background-color: red;
+height: 500px;
+border: 5px solid white;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+top: 78px;
+box-shadow: 0 0 29px #000;
+-moz-box-shadow: 0 0 29px #000;
+-webkit-box-shadow: 0 0 29px #000;
+display: none;
+}
+.welcome-box {
+position: absolute;
+width: 550px;
+background-color: black;
+left: 425px;
+top: 150px;
+padding: 35px;
+color: white;
+font-family: Helvetica, Arial, sans-serif;
+height: 200px;
+
+z-index: 1;
+}
+.blurback {
+width: 100%;
+height: 1000%;
+background-color: red;
+opacity: 0.9;
+position: absolute;
+z-index: 1;
+}
+.mainbody {
+width: 800px;
+height: 650px;
+background-color: black;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+top: 50px;
+z-index: 6;
+}
+.blurback3 {
+width: 100%;
+height: 100%;
+background-color: red;
+opacity: 0.8;
+position: absolute;
+z-index: 1;
+}
+
+.blurback2 {
+width: 100%;
+height: 100%;
+background-color: whitesmoke;
+opacity: 0.7;
+position: absolute;
+z-index: 0;
+display: none;
+}
+.welcome-box-content {
+position: relative;
+top: 125px;
+color: white;
+width: 562px;
+padding: 50px;
+margin-left: auto;
+z-index: 2;
+margin-right: auto;
+background-color: black;
+}
+.welcome-box-content h1
+{
+	font-size: 50px;
+}
+
+.welcome-box-content p
+{
+	font-size: 24px;
+}
+
+
+.welcome-box-content2 {
+position: relative;
+top: 125px;
+color: white;
+width: 562px;
+padding: 50px;
+margin-left: auto;
+z-index: 2;
+margin-right: auto;
+background-color: black;
+}
+.welcome-box-content2 h1
+{
+	font-size: 50px;
+}
+
+.welcome-box-content2 p
+{
+	font-size: 24px;
+}
+.password-box {
+font-family: Helvetica, Arial, sans-serif;
+color: white;
+margin-left: auto;
+margin-right: auto;
+max-width: 500px;
+padding-left: 8px;
+padding-right: 8px;
+margin-top: 120px;
+}
+
+.password-box h1
+{
+	font-size: 30px;
+	color:black;
+}
+
+.loginbox
+{
+	display: none;
+}
+
+
+.rsvpbuttons {
+position: relative;
+left: -285px;
+top: 10px;
+}
+.success {
+left: 130px;
+font-family: Helvetica, Arial, sans-serif;
+color: white;
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 120px;
+}
+
+.success h1
+{
+	font-size: 30px;
+	color:black;
+}
+.success p {y
+font-size: 15px;
+padding-top: 10px;
+
+}
+
+.already1 {
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 120px;
+font-family: Helvetica, Arial, sans-serif;
+color: white;
+}
+
+.already1 h1
+{
+	font-size: 30px;
+	color:black;
+}
+.already1 p {
+font-size: 15px;
+padding-top: 10px;
+
+}
+
+.already2 {
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 120px;
+font-family: Helvetica, Arial, sans-serif;
+color: white;
+}
+
+.already2 h1
+{
+	font-size: 30px;
+	color:black;
+}
+.already2 p {
+font-size: 15px;
+padding-top: 10px;
+
+}
+
+
+.already3 {
+font-family: Helvetica, Arial, sans-serif;
+color: white;
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 120px;
+}
+
+.already3 h1
+{
+	font-size: 30px;
+	color:black;
+}
+.already3 p {
+font-size: 15px;
+padding-top: 10px;
+
+}
+
+
+.yay {
+font-family: Helvetica, Arial, sans-serif;
+color: white;
+display: none;
+width: 60%;
+margin-top: 120px;
+margin-left: auto;
+margin-right: auto;
+}
+.yay h1
+{
+	font-size: 30px;
+	color:black;
+}
+.yay p {
+font-size: 15px;
+padding-top: 10px;
+
+}
+
+.bummer {
+font-family: Helvetica, Arial, sans-serif;
+color: white;
+display: none;
+margin-top: 120px;
+margin-left: auto;
+margin-right: auto;
+width: 60%;
+}
+.small {
+font-size: 15px;
+}
+
+.loginbutton {
+background-color: black;
+width: 107px;
+height: 10px;
+margin-left: 25%;
+position: absolute;
+z-index: 20;
+color: white;
+padding-left: 10px;
+padding-top: 5px;
+font-size: 14px;
+padding-bottom: 10px;
+cursor: pointer;
+}
+.loginbuttonclose
+ {
+ 	display: none;
+background-color: black;
+width: 107px;
+height: 10px;
+margin-left: 25%;
+position: absolute;
+z-index: 7;
+color: white;
+padding-left: 10px;
+padding-top: 5px;
+font-size: 14px;
+padding-bottom: 10px;
+cursor: pointer;
+}
+
+.moveDown
+{
+	top:109px;
+}
+
+.loginbox {
+display: none;
+background-color: black;
+width: 220px;
+height: 104px;
+margin-left: 25%;
+position: absolute;
+z-index: 7;
+color: white;
+padding-left: 10px;
+padding-top: 10px;
+font-size: 14px;
+padding-bottom: 10px;
+cursor: pointer;
+padding-right: 10px;
+}
+.loginpressed {
+float: right;
+background-color: red;
+border: none;
+color: white;
+font-size: 12px;
+text-transform: uppercase;
+}
+
+#username {
+background-color: red;
+border: none;
+color: white;
+width: 100%;
+margin-bottom: 5px;
+margin-top: 5px;
+}
+
+#password {
+background-color: red;
+border: none;
+color: white;
+width: 100%;
+margin-bottom: 5px;
+margin-top: 5px;
+}
+
+.table {
+position: absolute;
+z-index: 7;
+overflow-y: scroll;
+width: 750px;
+height: 618px;
+color: white;
+margin-top: 17px;
+padding-left: 26px;
+font-size: 15px;
+}
+
+.rsvptable {
+color: white;
+text-align: left;
+width: 99%;
+}
+
+.rsvptable td {
+width: 1000px;
+}
+
+.rsvptable th {
+font-size: 18px;
+border-bottom: 1px solid white;
+color: red;
+}
+.counter {
+font-size: 53px;
+color: white;
+padding-right: 10px;
+position: absolute;
+right: 10px;
+}
+.counter2 {
+font-size: 40px;
+color: black;
+padding-right: 10px;
+position: absolute;
+right: 240px;
+z-index: 6;
+}
+.bummer h1
+{
+	font-size: 30px;
+	color:black;
+}
+.bummer p {
+font-size: 15px;
+padding-top: 10px;
+
+}
+.gobutton {
+width: 20%;
+border-radius: 0;
+border: none;
+background-color: black;
+color: white;
+text-transform: uppercase;
+height: 50px;
+font-size: 15px;
+float: right;
+height: 80px;
+margin-top: 4px;
+}
+.yesbutton {
+position: relative;
+left: 300px;
+width: 84px;
+border-radius: 0;
+border: none;
+background-color: black;
+color: white;
+text-transform: uppercase;
+margin-top: 10px;
+height: 50px;
+font-size: 30px;
+margin-right: 10px;
+}
+.smaller
+{
+	font-size: 15px !important;
+}
+.yesbutton2 {
+position: relative;
+left: 300px;
+width: 242px;
+border-radius: 0;
+border: none;
+background-color: black;
+color: white;
+text-transform: uppercase;
+margin-top: 10px;
+height: 50px;
+font-size: 30px;
+margin-right: 10px;
+}
+.nobutton {
+position: relative;
+left: 300px;
+width: 84px;
+border-radius: 0;
+border: none;
+background-color: black;
+color: white;
+text-transform: uppercase;
+margin-top: 10px;
+height: 50px;
+font-size: 30px;
+}
+
+#phone {
+width: 75%;
+height: 80px;
+margin-top: 19px;
+border: 11px solid black;
+padding-bottom: 10px;
+float: left;
+font-size: 360%;
+}
+.password-box p {
+font-size: 15px;
+padding-top: 10px;
+}
+ul li {
+list-style: none;
+padding: 10px;
+font-size: 27px;
+}
+
+a {
+color: black;
+border-bottom: 2px solid white;
+text-decoration: none;
+}
+
+.welcome-box-content a {
+color: red;
+border-bottom: 2px solid white;
+text-decoration: none;
+}
+.welcome-box-content2 a {
+color: red;
+border-bottom: 2px solid white;
+text-decoration: none;
+}
+h3 {
+font-size: 15px;
+}
+.forward-title
+{
+	font-size: 32px;
+	color:black;
+}
+.x-close {
+width: 40px;
+position: absolute;
+right: 40px;
+top: 40px;
+cursor: pointer;
+}
+.d-pop-button
+{
+	cursor: pointer;
+}
+.yay-title {
+font-size: 30px;
+margin-bottom: 10px;
+font-family: Cambria;
+text-shadow: 4px 2px 4px black;
+}
+/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
+body {font: 13px Helmet, Freesans, sans-serif;}
+
+/* using local fonts? make sure to read up on Paul Irish's 
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/* we like off-black for text */
+body, select, input, textarea {color: #333;}
+body{background-image: url('../../_/img/bg.jpg'); background-size:200px;}
+
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+
+
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+	
+		
+}
+
+@media all and (orientation: portrait) {
+	
+}
+
+@media all and (orientation: landscape) {
+	
+}
+
